@@ -12,7 +12,7 @@ typst compile book.typ levine-quantum-chemistry-zh.pdf
 
 也可以把字体放在单独目录，通过 `typst compile --font-path <字体目录> book.typ levine-quantum-chemistry-zh.pdf` 指定。GitHub Actions 使用下方链接所列字体项目的固定版本。
 
-- [霞鹜文楷](https://github.com/lxgw/LxgwWenKai/releases/tag/v1.530)
+- [霞鹜文楷](https://github.com/lxgw/LxgwWenKai/releases/tag/v1.521)
 - [Noto CJK](https://github.com/notofonts/noto-cjk)
 
 ## GitHub Actions 和 Release
@@ -20,6 +20,6 @@ typst compile book.typ levine-quantum-chemistry-zh.pdf
 推送到 `main` 时，Actions 会编译并保存 PDF 构建产物。推送 `v*` 版本标签时，同一流程会将 CI 编译的 PDF 附到对应的 GitHub Release。
 
 ```sh
-git tag -a v1.0.1 -m "中文修订版 v1.0.1"
-git push origin v1.0.1
+git tag -a v1.0.2 -m "中文修订版 v1.0.2"
+git push origin v1.0.2
 ```
