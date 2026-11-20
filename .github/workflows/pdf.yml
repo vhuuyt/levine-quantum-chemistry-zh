@@ -59,5 +59,5 @@ jobs:
             gh release upload "$GITHUB_REF_NAME" "$asset" --clobber
           else
             gh release create "$GITHUB_REF_NAME" "$asset" --verify-tag \
-              --title "《量子化学》第七版 · 中文修订版 $GITHUB_REF_NAME" --generate-notes
+              --title "《量子化学》第七版 · 中文翻译 $GITHUB_REF_NAME" --generate-notes
           fi
